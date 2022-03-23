@@ -17,8 +17,10 @@ set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
 set(THREADS_PREFER_PTHREAD_FLAG TRUE)
 find_package(Threads REQUIRED)
 
-# Use a custom gaia config file to suppress rule stats logging.
+# Use custom gaia config files to suppress rule stats logging and use an abbreviated
+# format string for tutorial output.
 configure_file("${PROJECT_SOURCE_DIR}/gaia.conf" "${PROJECT_BINARY_DIR}/gaia_tutorial.conf")
+configure_file("${PROJECT_SOURCE_DIR}/gaia_log.conf" "${PROJECT_BINARY_DIR}/gaia_tutorial_log.conf")
 
 include("/opt/gaia/cmake/gaia.cmake")
 

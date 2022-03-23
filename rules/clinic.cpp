@@ -274,7 +274,7 @@ int main(int argc, const char** argv)
 
     // Load up a custom configuration file so that we don't
     // log rule statistics during the tutorial.
-    gaia::system::initialize("./gaia_tutorial.conf");
+    gaia::system::initialize("./gaia_tutorial.conf", "./gaia_tutorial_log.conf");
 
     args_handler_t args_handler(lesson_manager);
     args_handler.parse_and_run(argc, argv);
