@@ -837,9 +837,9 @@ ruleset interop
         }
     }
 
-    // [interop:6_location]
+    // [interop:6_resident]
     //
-    // Show how to read and write a null to an optional field.
+    // Show how to read an optional field and set to 'nullopt'.
     on_update(resident.is_intern)
     {
         if (!is_intern)
@@ -862,9 +862,9 @@ ruleset interop
         }
     }
 
-    // [interop:7_location]
+    // [interop:7_resident]
     //
-    // Show how to read and write optional fields.
+    // Show how to set an optional field.
     on_update(resident.is_intern)
     {
         if (is_intern)
